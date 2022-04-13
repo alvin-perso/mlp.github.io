@@ -1,43 +1,123 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Les punchlines de Marine Le Pen</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <h1>Les punchlines de Marine Le Pen</h1>
     <div class="container">
-        <h1>Les punchlines de Marine Le Pen</h1>
-        <figure>
-            <figcaption>Euh... Nique ta mère</figcaption>
-            <audio controls src="https://perso-alvin.s3.fr-par.scw.cloud/audio/euh_ntm.mp3"></audio>
-        </figure>
-        <figure>
-            <figcaption>En France !</figcaption>
-            <audio controls src="https://perso-alvin.s3.fr-par.scw.cloud/audio/en_france.mp3"></audio>
-        </figure>
-        <figure>
-            <figcaption>Les délinquant...</figcaption>
-            <audio controls src="https://perso-alvin.s3.fr-par.scw.cloud/audio/delincant_avion.mp3"></audio>
-        </figure>
-        <figure>
-            <figcaption>Vous êtes des enfants de bourgeois !</figcaption>
-            <audio controls src="https://perso-alvin.s3.fr-par.scw.cloud/audio/enfant_bourgeois.mp3"></audio>
-        </figure>
-        <figure>
-            <figcaption>Ils sont là</figcaption>
-            <audio controls src="https://perso-alvin.s3.fr-par.scw.cloud/audio/ils_sont_la.mp3"></audio>
-        </figure>
-        <figure>
-            <figcaption>Avec moi...</figcaption>
-            <audio controls src="https://perso-alvin.s3.fr-par.scw.cloud/audio/tolere_pas_ca.mp3"></audio>
-        </figure>
-        <figure>
-            <figcaption>Spéciale Valoche pécr'hess</figcaption>
-            <audio controls src="https://perso-alvin.s3.fr-par.scw.cloud/audio/debout.mp3"></audio>
-        </figure>
+
+      <audio id="audio_ntm" src="https://perso-alvin.s3.fr-par.scw.cloud/audio/euh_ntm.mp3"></audio>
+      <button id="player_ntm">Euh nique ta mère</button>
+      
+      <audio id="audio_enfr" src="https://perso-alvin.s3.fr-par.scw.cloud/audio/en_france.mp3"></audio>
+      <button id="player_enfr">En France !</button>
+      
+      <audio id="audio_avion" src="https://perso-alvin.s3.fr-par.scw.cloud/audio/delincant_avion.mp3"></audio>
+      <button id="player_avion">Les délinquant...</button>
+      
+      <audio id="audio_bourgeois" src="https://perso-alvin.s3.fr-par.scw.cloud/audio/enfant_bourgeois.mp3"></audio>
+      <button id="player_bourgeois">Vous êtes des enfants de bourgeois !</button>
+      
+      <audio id="audio_here" src="https://perso-alvin.s3.fr-par.scw.cloud/audio/ils_sont_la.mp3"></audio>
+      <button id="player_here">Ils sont là</button>
+      
+      <audio id="audio_tolere" src="https://perso-alvin.s3.fr-par.scw.cloud/audio/tolere_pas_ca.mp3"></audio>
+      <button id="player_tolere">Avec moi...</button>
+      
+      <audio id="audio_debout" src="https://perso-alvin.s3.fr-par.scw.cloud/audio/debout.mp3"></audio>
+      <button id="player_debout">Spéciale Valoche pécr'hess</button>
+
+      <button id="soon">Coming Soon</button>
+      
     </div>
-</body>
+
+    <script>
+      const player_ntm = document.querySelector("#player_ntm");
+      const audio_ntm = document.querySelector("#audio_ntm");
+
+      const player_enfr = document.querySelector("#player_enfr");
+      const audio_enfr = document.querySelector("#audio_enfr");
+
+      const player_avion = document.querySelector("#player_avion");
+      const audio_avion = document.querySelector("#audio_avion");
+
+      const player_bourgeois = document.querySelector("#player_bourgeois");
+      const audio_bourgeois = document.querySelector("#audio_bourgeois");
+
+      const player_here = document.querySelector("#player_here");
+      const audio_here = document.querySelector("#audio_here");
+
+      const player_tolere = document.querySelector("#player_tolere");
+      const audio_tolere = document.querySelector("#audio_tolere");
+
+      const player_debout = document.querySelector("#player_debout");
+      const audio_debout = document.querySelector("#audio_debout");
+
+      player_ntm.addEventListener("click", () => {
+        if (audio_ntm.paused) {
+          audio_ntm.play();
+        } else {
+          audio_ntm.pause();
+        }
+      });
+
+      player_enfr.addEventListener("click", () => {
+        if (audio_enfr.paused) {
+          audio_enfr.play();
+        } else {
+          audio_enfr.pause();
+        }
+      });
+
+      player_avion.addEventListener("click", () => {
+        if (audio_avion.paused) {
+          audio_avion.play();
+        } else {
+          audio_avion.pause();
+        }
+      });
+
+      player_bourgeois.addEventListener("click", () => {
+        if (audio_bourgeois.paused) {
+          audio_bourgeois.play();
+        } else {
+          audio_bourgeois.pause();
+        }
+      });
+
+      player_here.addEventListener("click", () => {
+        if (audio_here.paused) {
+          audio_here.play();
+        } else {
+          audio_here.pause();
+        }
+      });
+
+      player_tolere.addEventListener("click", () => {
+        if (audio_tolere.paused) {
+          audio_tolere.play();
+        } else {
+          audio_tolere.pause();
+        }
+      });
+
+      player_debout.addEventListener("click", () => {
+        if (audio_debout.paused) {
+          audio_debout.play();
+        } else {
+          audio_debout.pause();
+        }
+      });
+
+    </script>
+  </body>
 </html>
